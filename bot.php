@@ -1,5 +1,5 @@
 <?php
-
+// get your bot token from @botfather
 define('BOT_TOKEN', '300000000:AAAAAAAAAAAAAAAAAAAAAAAAA');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 define('SITE_ADDR','https://www.yourbot.ru/');//
