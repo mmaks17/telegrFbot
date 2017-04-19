@@ -149,7 +149,7 @@ function processMessage($message) {
 			$fdsize=round($data['Content-Length']/1024/1024,0);
 			if($fdsize>FILE_LIMIT)
 			{
-				apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "Ваш  файл $fdsize МБ   разрешено не более $filelimit "));
+				apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "Ваш  файл $fdsize МБ   разрешено не более ".FILE_LIMIT));
 				die("0");
 			}
 			
