@@ -4,7 +4,7 @@ define('BOT_TOKEN', '300000000:AAAAAAAAAAAAAAAAAAAAAAAAA');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 define('SITE_ADDR','https://www.yourbot.ru/');//
 define('WEBHOOK_URL', 'https://www.yourbot.ru/bot.php');
-define('FILE_LIMIT', 200);
+define('FILE_LIMIT', 200); //MB
 
 function apiRequestWebhook($method, $parameters) {
   if (!is_string($method)) {
